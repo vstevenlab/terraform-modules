@@ -27,7 +27,7 @@ resource "aws_ecs_task_definition" "ecs_task_definition" {
   memory                   = 4096
 
   runtime_platform {
-    operating_system_family = LINUX
+    operating_system_family = "LINUX"
     cpu_architecture        = var.architecture
   }
 
